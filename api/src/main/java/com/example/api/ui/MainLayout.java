@@ -9,6 +9,7 @@ import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.function.SerializableSupplier;
 import com.vaadin.flow.router.RouterLayout;
 import com.vaadin.flow.server.VaadinService;
@@ -22,6 +23,7 @@ import java.util.Locale;
 @HtmlImport("/frontend/styles/shared-styles.html")
 @HtmlImport("/frontend/styles/main-menu-styles.html")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
+@Push
 public class MainLayout extends Composite<VerticalLayout> implements RouterLayout {
 
     private VerticalLayout contentLayout = new VerticalLayout();
