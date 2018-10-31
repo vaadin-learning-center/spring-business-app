@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>businnes-app-spring</artifactId>
+    <artifactId>business-app-spring</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
