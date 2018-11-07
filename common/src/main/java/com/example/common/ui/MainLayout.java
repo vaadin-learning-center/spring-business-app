@@ -1,6 +1,6 @@
-package com.example.api.ui;
+package com.example.common.ui;
 
-import com.example.api.service.AuthenticationService;
+import com.example.common.service.AuthenticationService;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.HasElement;
 import com.vaadin.flow.component.UI;
