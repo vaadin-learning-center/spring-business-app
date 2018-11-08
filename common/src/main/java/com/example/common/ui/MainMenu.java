@@ -12,8 +12,8 @@ public class MainMenu extends Composite<VerticalLayout> {
 
     public MainMenu() {
         getContent().setSizeUndefined();
-        getContent().addClassName("main-menu");
         getContent().setMargin(false);
+        getContent().addClassName("main-menu");
     }
 
     public void addOption(Class<? extends Component> viewClass, String text, VaadinIcon icon) {

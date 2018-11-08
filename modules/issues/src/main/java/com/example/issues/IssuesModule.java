@@ -78,6 +78,7 @@ public class IssuesModule implements BusinessAppModule {
     private void addHeaderOptions() {
         uiConfiguration.addHeaderComponent(() -> {
             projectsSelector = new ComboBox<>(null);
+            projectsSelector.addClassName("no-clear-button");
             projectsSelector.setItemLabelGenerator(Project::getName);
             updateProjectsSelector();
             projectsSelector.addValueChangeListener(e -> selectProject(e.getValue()));

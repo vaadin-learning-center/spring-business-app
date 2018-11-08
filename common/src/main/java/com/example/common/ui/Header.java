@@ -13,9 +13,7 @@ public class Header extends Composite<HorizontalLayout> {
 
     public Header(String title) {
         Image logo = new Image("/frontend/images/app-logo.png", "App logo");
-        logo.addClassName("header-logo");
         Span appName = new Span(title);
-        appName.addClassName("header-app-name");
 
         contentLayout.setPadding(true);
         contentLayout.setJustifyContentMode(FlexComponent.JustifyContentMode.END);
@@ -23,9 +21,12 @@ public class Header extends Composite<HorizontalLayout> {
 
         getContent().add(logo, appName, contentLayout);
         getContent().setFlexGrow(1, contentLayout);
-        getContent().addClassName("header");
         getContent().setWidth("100%");
         getContent().setAlignSelf(FlexComponent.Alignment.CENTER, appName);
+
+        getContent().addClassName("header");
+        logo.addClassName("header-logo");
+        appName.addClassName("header-app-name");
     }
 
     public void add(Component component) {

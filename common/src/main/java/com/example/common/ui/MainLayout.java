@@ -20,9 +20,9 @@ import com.vaadin.flow.theme.lumo.Lumo;
 import java.util.Locale;
 
 @UIScope
-@HtmlImport("/frontend/styles/shared-styles.html")
-@HtmlImport("/frontend/styles/main-menu-styles.html")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
+@HtmlImport("/frontend/styles/shared-styles.html")
+@HtmlImport("/frontend/styles/main-layout-styles.html")
 @Push
 public class MainLayout extends Composite<VerticalLayout> implements RouterLayout {
 
