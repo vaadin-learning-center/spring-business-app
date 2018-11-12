@@ -48,13 +48,11 @@ public class MainLayout extends Composite<VerticalLayout> implements RouterLayou
         MainMenu mainMenu = new MainMenu();
         uiConfiguration.getMenuOptions().stream().forEach(mainMenu::addOption);
 
-        contentLayout.setMargin(false);
         contentLayout.setPadding(false);
         contentLayout.setSpacing(false);
 
         HorizontalLayout horizontalLayout = new HorizontalLayout(mainMenu, contentLayout);
         horizontalLayout.setSizeFull();
-        horizontalLayout.setMargin(false);
         horizontalLayout.setPadding(false);
         horizontalLayout.setSpacing(false);
 
